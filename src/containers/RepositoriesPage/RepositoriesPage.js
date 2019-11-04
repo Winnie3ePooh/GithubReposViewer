@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { Col } from "antd";
 
-import SearchContext from "context/searchContext";
+import SearchContext from "context/SearchContext";
 
 import { RowWrapper } from "components/Custom/Custom";
 
