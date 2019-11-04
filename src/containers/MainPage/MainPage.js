@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 import routes from "appRoutes/routes";
 
-import SearchContext from "context/searchContext";
+import SearchContext from "context/SearchContext";
 import Navigation from "components/Navigation/Navigation";
 
 const { Header, Footer, Content } = Layout;
