@@ -1,0 +1,7 @@
+build/*
+!build/index.css
+!build/index.html
+node_modules
+.env
+.vscode
+*.zip
