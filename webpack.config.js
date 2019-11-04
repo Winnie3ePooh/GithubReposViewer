@@ -58,11 +58,10 @@ module.exports = {
     extensions: [".js", ".jsx"]
   },
   plugins: devMode
-    ? [new webpack.HotModuleReplacementPlugin()]
+    ? [new webpack.HotModuleReplacementPlugin(), new Dotenv()]
     : [
         new MomentLocalesPlugin({
           localesToKeep: ["ru"]
-        }),
-        new Dotenv()
+        })
       ]
 };
