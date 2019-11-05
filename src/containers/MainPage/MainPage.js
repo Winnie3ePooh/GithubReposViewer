@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import { Switch, Route } from "react-router-dom";
 import { Layout } from "antd";
 import styled from "styled-components";
@@ -14,11 +14,12 @@ const { Header, Footer, Content } = Layout;
 const MainPage = () => {
   const [searchContext, setSearchContext] = useState("");
 
+  let location = useLocation();
   let history = useHistory();
 
   const searchHandler = val => {
     setSearchContext(val);
-    history.push("/");
+    if (location.pathname !== '/') history.push("/");
   };
 
   return (

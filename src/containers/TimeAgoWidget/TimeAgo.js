@@ -31,8 +31,7 @@ const TimeAgo = ({ time, children }) => {
 
   return (
     <div>
-      {children}
-      {lastUpdate}
+      {children} {lastUpdate}
     </div>
   );
 };

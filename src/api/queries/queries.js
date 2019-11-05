@@ -21,7 +21,8 @@ export const GET_ALL_REPOS = gql`
             name
             description
 						url
-						openGraphImageUrl
+            openGraphImageUrl
+            updatedAt
             owner {
               login
               url
